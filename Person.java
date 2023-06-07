@@ -6,7 +6,11 @@ public class Person implements Cloneable {
         this.name = name;
         this.age=20;
     }
-
+    
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
    
     
     public static void main(String[] args) throws Exception {
