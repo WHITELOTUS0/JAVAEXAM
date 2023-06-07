@@ -10,10 +10,10 @@ public class Chaining {
     }
 
     Chaining(String district, int age){
-        System.out.println("I am from "+ district + "And I am " + age+" years old");
+        System.out.println("I am from "+ district + " And I am " + age+" years old");
     }
 
     public static void main(String[] args) {
-        
+        new Chaining();
     }
 }
