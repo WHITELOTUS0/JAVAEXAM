@@ -9,6 +9,9 @@ public class Student {
 
     @Override
     public Object clone() throws CloneNotSupportedException{
-        
+        Student clone = (Student) super.clone();
+        clone.name=this.name;
+        clone.age=this.age;
+        return clone;
     }
 }
