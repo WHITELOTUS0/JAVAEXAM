@@ -6,6 +6,6 @@ public class Person implements Cloneable{
     }
 
     public static void main(String[] args) {
-        
+        Person obj = new Person("Glorry");
     }
 }
