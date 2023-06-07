@@ -7,7 +7,7 @@ public class Person implements Cloneable {
         this.age=20;
     }
 
-   }
+   
     
     public static void main(String[] args) throws Exception {
         Person obj = new Person("Glorry", 20);
@@ -16,14 +16,7 @@ public class Person implements Cloneable {
         System.out.println(obj.name);
         System.out.println(obj2.name);
 
-        obj.name="Shariff";
-        obj.age=34;
-
-        System.out.println(obj.name);
-        System.out.println(obj2.name);
-
-        System.out.println(obj.age);
-        System.out.println(obj2.age);
+       
 
     }
 }
