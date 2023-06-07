@@ -4,6 +4,7 @@ public class School {
         System.out.println("I go to School");
     }
     School (String location){
+        this();
         System.out.println(location);
     }
     
