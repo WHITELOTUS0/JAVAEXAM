@@ -8,4 +8,8 @@ public class Chaining {
         this("Kampala", 20);
         System.out.println("One Arg Constructor : " +x);
     }
+
+    Chaining(String district, int age){
+        System.out.println("I am from "+ district + "And I am " + age+" years old");
+    }
 }
