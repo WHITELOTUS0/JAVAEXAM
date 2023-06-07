@@ -1,6 +1,6 @@
 public class Person implements Cloneable {
-    private String name;
-    int age;
+    public String name;
+    public int age;
 
     Person(String name, int age) {
         this.name = name;
