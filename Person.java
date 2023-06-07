@@ -16,5 +16,10 @@ public class Person implements Cloneable {
         System.out.println(obj.name);
         System.out.println(obj2.name);
 
+        obj.name="Shariff";
+        obj2 = (Person) 
+        System.out.println(obj.name);
+        System.out.println(obj2.name);
+
     }
 }
