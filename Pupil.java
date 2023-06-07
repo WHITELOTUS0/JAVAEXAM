@@ -4,7 +4,8 @@ public class Pupil extends School{
         super("Kampala");
         System.out.println("From sub class constructor");
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         new Pupil();
+        Thread.sleep(5000);
     }
 }
