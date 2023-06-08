@@ -5,6 +5,7 @@ public class Serialize {
     public int age;
 
     Serialize(String name, int age){
-        
+        this.name=name;
+        this.age=age;
     }
 }
