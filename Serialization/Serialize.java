@@ -13,6 +13,7 @@ public class Serialize {
 
     public static void main(String[] args) {
         try{
+            Serialize obj = new Serialize("GLORRY", 20);
             
         }catch(IOException e){
             e.printStackTrace();
