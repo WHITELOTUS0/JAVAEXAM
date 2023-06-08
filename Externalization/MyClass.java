@@ -19,5 +19,24 @@ public class MyClass implements Externalizable{
         out.writeInt(age);
     }
 
+    @Override
+    public void readExternal(ObjectInput in) throws IOException ,ClassNotFoundException{
+        name=(String)in.readObject();
+        age=in.readInt();
+    }
+
+    public static void main(String[] args) {
+        try{
+            MyClass myClass=new MyClass("Glorry",20);
+            FileOutputStream fileOutputStream=new FileOutputStream("myClass.txt");
+            ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream);
+            objectOutputStream.writeObject(myClass);
+            objectOutputStream.close();
+
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+
     
 }
