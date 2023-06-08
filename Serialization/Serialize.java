@@ -2,7 +2,7 @@ package Serialization;
 
 import java.io.*;
 
-public class Serialize {
+public class Serialize implements Serializable{
     public String name;
     public int age;
 
