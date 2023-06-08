@@ -1,3 +1,4 @@
+package Chaining;
 //Superclass is School
 public class Pupil extends School{
     Pupil(){

@@ -1,3 +1,4 @@
+package Chaining;
 //Subclass is Pupil
 public class School {
     School(){
