@@ -1,6 +1,6 @@
 package Serialization;
 
-import java.io.IOException;
+import java.io.*;
 
 public class Serialize {
     public String name;
@@ -15,7 +15,7 @@ public class Serialize {
         try{
             Serialize obj = new Serialize("GLORRY", 20);
             //Serialization
-            
+
         }catch(IOException e){
             e.printStackTrace();
         }
