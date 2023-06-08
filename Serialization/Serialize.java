@@ -18,7 +18,7 @@ public class Serialize {
             FileOutputStream fileOut = new FileOutputStream("se_file.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(obj);
-
+            out.close();
         }catch(IOException e){
             e.printStackTrace();
         }
