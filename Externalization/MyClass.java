@@ -9,7 +9,14 @@ public class MyClass implements Externalizable{
     public MyClass(){}
 
     MyClass(String name, int age){
-        
+        this.name=name;
+        this.age=age;
+    }
+
+    @Override
+    public void writeExternal(ObjectOutput out) throws IOException{
+        out.writeObject(name);
+        out.writeInt(age);
     }
 
     
