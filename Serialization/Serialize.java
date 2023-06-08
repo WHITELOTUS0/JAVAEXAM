@@ -19,6 +19,8 @@ public class Serialize implements Serializable{
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(obj);
             out.close();
+            fileOut.close();
+            System.out.println("Serialized Successfully");
         }catch(IOException e){
             e.printStackTrace();
         }

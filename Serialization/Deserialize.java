@@ -6,7 +6,7 @@ public class Deserialize {
     public static void main(String[] args) {
         try {
             // Deserialization
-            FileInputStream fileIn = new FileInputStream("se-file.ser");
+            FileInputStream fileIn = new FileInputStream("se_file.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
             // Read the object
             Serialize deserializedObj = (Serialize) in.readObject();
