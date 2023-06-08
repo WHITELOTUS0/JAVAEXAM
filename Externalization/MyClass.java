@@ -3,8 +3,14 @@ package Externalization;
 import java.io.*;
 
 public class MyClass implements Externalizable{
-    
-    public Myclass(){}
+    public String name;
+    public int age;
+
+    public MyClass(){}
+
+    MyClass(String name, int age){
+        
+    }
 
     
 }
