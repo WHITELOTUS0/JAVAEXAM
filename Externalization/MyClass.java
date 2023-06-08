@@ -36,6 +36,17 @@ public class MyClass implements Externalizable{
         }catch(IOException e){
             e.printStackTrace();
         }
+
+        try{
+            FileInputStream fileInputStream=new FileInputStream("myClass.txt");
+            ObjectInputStream objectInputStream=new ObjectInputStream(fileInputStream);
+            MyClass myClass=(MyClass)objectInputStream.readObject();
+            System.out.println(myClass.name);
+            System.out.println(myClass.age);
+            objectInputStream.close();
+        }catch(IOException | ClassNotFoundException ex){
+            ex.printStackTrace();
+        }
     }
 
     
