@@ -6,5 +6,8 @@ public class Dog extends Animal{
     public static void main(String[] args) {
         Animal obj = new Dog();
         obj.eat();
+        Dog obj2 = (Dog)obj;
+        obj2.bark();
+        
     }
 }
