@@ -1,3 +1,4 @@
+package Cloning;
 //Shallow Cloning
 public class Person implements Cloneable {
     public String name;
