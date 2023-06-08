@@ -12,7 +12,7 @@ public class Student implements Cloneable{
     @Override
     public Object clone() throws CloneNotSupportedException{
         Student cloned = (Student) super.clone();
-        cloned.name=this.name;
+        cloned.name=new String(this.name);
         cloned.age=this.age;
         return cloned;
     }
@@ -27,7 +27,7 @@ public class Student implements Cloneable{
         obj.name = "John";
         obj.age = 30;
 
-        System.out.println(obj.name);
+        System.out.println(obj.age);
         System.out.println(obj2.name);
     }
 }
