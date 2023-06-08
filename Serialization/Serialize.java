@@ -15,6 +15,9 @@ public class Serialize {
         try{
             Serialize obj = new Serialize("GLORRY", 20);
             //Serialization
+            FileOutputStream fileOut = new FileOutputStream("se_file.ser");
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(obj);
 
         }catch(IOException e){
             e.printStackTrace();
