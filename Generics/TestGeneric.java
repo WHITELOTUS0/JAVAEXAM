@@ -7,6 +7,6 @@ public class TestGeneric {
         List<String> names = new ArrayList<>();
         names.add("Glorry");
         names.add("Sibo");
-        System.out.println();
+        System.out.println(names.get(0));
     }
 }
