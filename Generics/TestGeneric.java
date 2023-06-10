@@ -9,4 +9,8 @@ public class TestGeneric {
         names.add("Sibo");
         System.out.println(names.get(0));
     }
+
+    public <Y> Y m(Y time){
+        return time;
+    }
 }
