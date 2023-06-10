@@ -10,7 +10,7 @@ public class TestGeneric {
         System.out.println(names.get(0));
     }
 
-    public <Y> Y m(Y time){
-        return time;
+    public <Y extends Number> int m(Y time){
+        return time.intValue() * time.intValue();
     }
 }
