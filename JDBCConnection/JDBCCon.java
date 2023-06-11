@@ -9,7 +9,7 @@ public class JDBCCon {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/mydatabase";
         String username = "";
-        String password = "Bujumbura1#";
+        String password = "";
 
         try {
             // Register the JDBC driver
