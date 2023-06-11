@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class JDBCCon {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/mydatabase";
-        String username = "root";
+        String username = "";
         String password = "Bujumbura1#";
 
         try {
