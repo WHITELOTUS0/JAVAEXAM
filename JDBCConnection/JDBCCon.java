@@ -23,7 +23,7 @@ public class JDBCCon {
             String insertQuery = "INSERT INTO mytable (Name, Password) VALUES (?, ?)";
             PreparedStatement statement = connection.prepareStatement(insertQuery);
             // Set the parameter values
-            statement.setString(1, "sharo");
+            statement.setString(1, "sharo256");
             statement.setString(2, "password123");
 
             // Execute the INSERT statement
