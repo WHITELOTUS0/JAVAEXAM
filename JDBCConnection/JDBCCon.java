@@ -8,8 +8,8 @@ import java.sql.SQLException;
 public class JDBCCon {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/mydatabase";
-        String username = "";
-        String password = "";
+        String username = "root";
+        String password = "Bujumbura1#";
 
         try {
             // Register the JDBC driver
@@ -19,11 +19,11 @@ public class JDBCCon {
             Connection connection = DriverManager.getConnection(url, username, password);
             System.out.println("Connected to the database!");
 
-            // Perform database operations...
+            // Perform database operations....
             String insertQuery = "INSERT INTO mytable (Name, Password) VALUES (?, ?)";
             PreparedStatement statement = connection.prepareStatement(insertQuery);
             // Set the parameter values
-            statement.setString(1, "Glorry");
+            statement.setString(1, "sharo");
             statement.setString(2, "password123");
 
             // Execute the INSERT statement
