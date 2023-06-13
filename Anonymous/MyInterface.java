@@ -10,4 +10,8 @@ class MyClass{
             System.out.println("doing something");
         }
     };
+
+    public static void main(String[] args) {
+        
+    }
 }
