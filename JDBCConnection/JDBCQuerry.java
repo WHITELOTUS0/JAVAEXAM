@@ -9,6 +9,9 @@ public class JDBCQuerry {
             String user = "root";
             String password = "Bujumbura1#";
 
+            Connection con = DriverManager.getConnection(url, user, password);
+            Statement stmt = con.createStatement();
+
         }catch(SQLException | ClassNotFoundException e){
             e.printStackTrace();
         }
