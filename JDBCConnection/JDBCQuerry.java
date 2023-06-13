@@ -3,6 +3,14 @@ import java.sql.*;
 
 public class JDBCQuerry {
     public static void main(String[] args) {
-        Class.forName("com.mysql.cj.jdbc.Driver");
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            String url = "jsbc:mysql://localhost:3306/mydatabase";
+            String user = "root";
+            String password = "Bujumbura1#";
+
+        }catch(SQLException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
     }
 }
