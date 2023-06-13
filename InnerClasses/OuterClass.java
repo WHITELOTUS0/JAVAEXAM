@@ -2,6 +2,7 @@ package InnerClasses;
 
 public class OuterClass {
     public int age=10;
+    public static String name="Glorry";
 
     public class InnerClass{
         public void printAge(){
@@ -10,7 +11,9 @@ public class OuterClass {
     }
 
     public static class StaticInnerClass{
-
+        public void printName(){
+            System.out.println("Age is "+name);
+        }
     }
 
     public static void main(String[] args) {
