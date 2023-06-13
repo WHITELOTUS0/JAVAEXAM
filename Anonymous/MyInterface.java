@@ -12,6 +12,7 @@ class MyClass{
     };
 
     public static void main(String[] args) {
-        
+        MyClass myclass = new MyClass();
+        myclass.obj.doSomething();
     }
 }
