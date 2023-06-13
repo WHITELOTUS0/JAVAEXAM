@@ -20,5 +20,8 @@ public class OuterClass {
         OuterClass outer = new OuterClass();
         OuterClass.InnerClass inner = outer.new InnerClass();
         inner.printAge();
+
+        StaticInnerClass statinner = new StaticInnerClass();
+        statinner.printName();
     }
 }
