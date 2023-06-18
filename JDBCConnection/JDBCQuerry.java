@@ -23,3 +23,4 @@ public class JDBCQuerry {
         }
     }
 }
+//Simple Database Connection 
